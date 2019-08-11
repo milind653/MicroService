@@ -1,0 +1,13 @@
+server:
+  port: 8762
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url: 
+      defaultZone: http://active-eureka-server:8761  # Where's my buddy?
+  instance:
+    hostname: shadow-eureka-server
+    #health-check-url: http://peer1:8761/actuator/health
+    #status-page-url: http://peer1:8761/actuator/status
+    #lease-renewal-interval-in-seconds: 5

@@ -1,0 +1,14 @@
+server:
+  port: 8790
+
+
+spring:
+  application:
+    name: TradeService
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://active-eureka-server:8761/eureka/,http://shadow-eureka-server:8762/eureka
