@@ -1,0 +1,22 @@
+server:
+  port: 9090
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://active-eureka-server:8761/eureka/,http://shadow-eureka-server:8762/eureka
+
+spring:
+  application:
+    name: zuul-server
+          
+zuul:
+  routes:
+    fitst:
+      path: /api/trade/**
+      serviceId: TradeService
+      
+
+

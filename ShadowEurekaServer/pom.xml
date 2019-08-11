@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>com.milind.ture.micro.eureka</artifactId>
+	<artifactId>ShadowEurekaServer</artifactId>
 	<version>0.0.1</version>
 	<name>com.milind.ture.micro.eureka</name>
 	<description>This is Eureka Server</description>
